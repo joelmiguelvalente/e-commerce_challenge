@@ -10,7 +10,7 @@ const secciones = async () => {
 	const banner = document.querySelector(".section__banner")
 	const obj = await response()
 	const categorias = obj.categories
-	categorias.forEach( categoria => banner.before(template.agregar_section(categoria.nombre, categoria.seo)))
+	categorias.forEach( categoria => banner.after(template.agregar_section(categoria.nombre, categoria.seo)))
 }
 
 const productos = async () => {
