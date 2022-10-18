@@ -370,6 +370,7 @@ header {
 	font-weight: 700;
 	font-size: var(--font-size-title);
 	color: var(--subtitulo);
+	text-transform: capitalize;
 }
 .productos__header--link {
 	font-weight: 700;
@@ -465,12 +466,11 @@ footer {
 	font-size: 1rem;
 	margin-bottom: 0.5rem;
 }
-.footer__input--group {
+.form__input--group {
 	margin-bottom: 1rem;
 	position: relative;
-	background-color: var(--fondo-blanco);
 }
-.footer__input--label {
+.form__input--label {
 	position: absolute;
 	font-size: 1rem;
 	font-weight: 400;
@@ -478,21 +478,23 @@ footer {
 	top: 1rem;
 	transition: font-size .4s ease-in-out, top .4s ease-in-out
 }
-.form--active .footer__input--label {
+.form--active .form__input--label {
 	top: 0;
 	font-size: 12px;
 	transition: font-size .4s ease-in-out, top .4s ease-in-out
 }
-.footer__input--input {
+.form__input--input {
    padding: 1.2rem 0.75rem 0.8rem 0.75rem;
 	width: 100%;
 	resize: none;
 	font-size: 1rem;
+	background-color: var(--fondo-blanco);
+	border-bottom: 2px solid var(--fondo-gris-claro);
 }
-.form--active {
+.form--active .form__input--input {
 	border-bottom: 2px solid var(--azul-100);
 }
-.footer__input--invalid {
+.form__input--invalid .form__input--input {
 	border-bottom: 2px solid #F00;
 }
 .form__input--error {
@@ -502,7 +504,7 @@ footer {
 	font-size: 12px;
 	font-style: italic;
 }
-.footer__grid--form .button {
+.button--padding {
 	padding: 0.8rem 1rem;
 }
 @media (min-width: 768px) {	

@@ -1,24 +1,33 @@
 import { template } from './plantilla.js'
-//const file = `${location.origin}${location.pathname}db.json`
-const mockapi_id = "63471309db76843976a5c240"
-const urlfile = `https://${mockapi_id}.mockapi.io/`
+
+const urlfile = `${location.origin}${location.pathname}db.json`
 const response = objecto => {
-	const newurl = urlfile + objecto.replace(/ /ig, '')
+	const newurl = urlfile
 	return fetch(newurl).then(response => response.json())
 }
 
-const add = async name => {
-	const items = await response(name.replace('_', ' '))
-	items.forEach( item => {
-		const temp = template.agregar_tarjeta(item, name)
-		document.querySelector(`.${name} .productos__grid`).append(temp)
-	})
+const secciones = async () => {
+	const banner = document.querySelector(".section__banner")
+	const obj = await response()
+	const categorias = obj.categories
+	categorias.forEach( categoria => banner.before(template.agregar_section(categoria.nombre, categoria.seo)))
 }
 
-const star_wars = () => add('star_wars')
-const consolas = () => add('consolas')
-const diversos = () => add('diversos')
+const productos = async () => {
+	const obj = await response()
+	const lista_productos = obj.products
+	const categorias = obj.categories
+	categorias.forEach( categoria => {
+		const lista = lista_productos[categoria.seo]
+		lista.forEach( producto => {
+			const divPro = document.querySelector(`.${categoria.seo} .productos__grid`)
+			divPro.append(template.agregar_tarjeta(producto, categoria.seo))
+			//divPro.appendChild(template.agregar_section(categoria.nombre, categoria.seo))
+		})
+	})
+	
+}
 
-export const productos = {
-	star_wars, consolas, diversos
+export const estructura = {
+	secciones, productos
 }
