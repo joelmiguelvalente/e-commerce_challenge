@@ -1,0 +1,33 @@
+.section__login {
+	height: calc(100vh - 75px);
+}
+.login__box {
+	width: 80%;
+}
+.login__box fieldset {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+.login__box .button {
+	width: 120px;
+	display: block;
+	margin: 1rem auto;
+}
+.login__box .form__legend {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+.form__input--group {
+	width: 100%;
+}
+@media (min-width: 768px) {
+	.login__box {
+		width: 450px;
+	}
+	.login__box .form__legend {
+		margin-bottom: 2rem;
+	}
+}
