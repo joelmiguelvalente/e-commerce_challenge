@@ -1,0 +1,28 @@
+.producto__datos--info, .similares {
+	padding: 1rem;
+}
+.producto__info--titulo, .similares__titulo {
+	font-weight: 500;
+	font-size: var(--font-size-22);
+	margin-bottom: 8px;
+}
+.producto__info--precio {
+	font-weight: 700;
+	font-size: var(--font-size-16);
+	margin-bottom: 8px;
+}
+.producto__info--descripcion {
+	font-weight: 400;
+	font-size: var(--font-size-14);
+	line-height: var(--font-size-16);
+	margin-bottom: var(--font-size-16);
+}
+.similares__titulo {
+	font-weight: 700;
+	margin-bottom: var(--font-size-16);
+}
+.producto__datos--imagen img {
+	height: 192px;
+	width: 100%;
+	object-fit: cover;
+}

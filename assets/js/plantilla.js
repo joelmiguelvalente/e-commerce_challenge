@@ -1,6 +1,6 @@
 const create = type => document.createElement(type)
 
-const agregar_section = (nombre, seo) => {
+const newSection = (nombre, seo) => {
 	const section = create("section")
 	section.classList.add('productos', seo)
 
@@ -16,7 +16,7 @@ const agregar_section = (nombre, seo) => {
 	return section
 }
 
-const agregar_tarjeta = (elemento, pagina) => {
+const newCard = (elemento, pagina) => {
 	// Texto
 	const numero = elemento.title.split('_')[1]
 	const alt = elemento.tags.join(" ")
@@ -29,11 +29,11 @@ const agregar_tarjeta = (elemento, pagina) => {
 		<div class="productos__card--info">
 			<h4 class="productos__info--title">${elemento.title}</h4>
 			<p class="productos__info--price">${elemento.price}</p>
-			<a class="productos__info--link" href="ver-${pagina}-${numero}.html">Ver producto</a>
+			<a class="productos__info--link" href="producto.html?id=${elemento.id}&cat=${pagina}">Ver producto</a>
 		</div>
 	</div>`
 	gridColumn.innerHTML = bloque
 	return gridColumn
 }
 
-export const template = { agregar_tarjeta, agregar_section }
+export const template = { newSection, newCard }

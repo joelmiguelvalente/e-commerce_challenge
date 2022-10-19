@@ -10,7 +10,9 @@ const secciones = async () => {
 	const banner = document.querySelector(".section__banner")
 	const obj = await response()
 	const categorias = obj.categories
-	categorias.forEach( categoria => banner.after(template.agregar_section(categoria.nombre, categoria.seo)))
+	categorias.forEach( categoria => {
+		banner.after(template.newSection(categoria.nombre, categoria.seo))
+	})
 }
 
 const productos = async () => {
@@ -21,12 +23,13 @@ const productos = async () => {
 		const lista = lista_productos[categoria.seo]
 		lista.forEach( producto => {
 			const divPro = document.querySelector(`.${categoria.seo} .productos__grid`)
-			divPro.append(template.agregar_tarjeta(producto, categoria.seo))
+			divPro.appendChild(template.newCard(producto, categoria.seo))
 		})
 	})
 	
 }
 
 export const estructura = {
-	secciones, productos
+	secciones, 
+	productos
 }

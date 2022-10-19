@@ -4,11 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Iniciar sesión - AluraGeek</title>
+<title>AluraGeek</title>
 <!-- Favicon -->
 <link rel="shortcut icon" href="./assets/img/joystick.svg" type="image/png" />
 <!-- Configuración para el SEO -->
-<meta name="title" content="Iniciar sesión - AluraGeek"/>
+<meta name="title" content="AluraGeek — E-Commerce"/>
 <meta name="description" content="Un buen lugar para adquirir todo lo que deseas en un mismo lugar con los mejores precios"/>
 <meta name="images" content="./assets/img/joystick.svg"/>
 <meta name="images" content="./assets/img/logo.svg"/>
@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap" rel="stylesheet">
 <!-- Style of site -->
 <link rel="stylesheet" href="./assets/css/base.css">
-<link rel="stylesheet" href="./assets/css/login.css">
+<link rel="stylesheet" href="./assets/css/producto.css">
 </head>
 <body>
 	
@@ -43,25 +43,25 @@
 			</div>
 		</header>
 
-		<section class="section__login d--flex jc--center ai--center">
-			<form method="POST" class="login__box" name="login">
-				<fieldset class="d--flex jc--start ai--center flex--column gap--4">
-					<legend class="form__legend">Iniciar sesion</legend>
-					<div class="form__input--group">
-						<label for="email" class="form__input--label">Escriba su correo</label>
-						<input type="email" name="email" id="email" class="form__input--input" data-tipo="email" required>
-						<span class="form__input--error"></span>
-					</div>
-					<div class="form__input--group">
-						<label for="password" class="form__input--label">Escriba su contraseña</label>
-						<input type="password" name="password" id="password" class="form__input--input" data-tipo="password" title="minimo 6 a máximo 12 caracteres" minlength="6" maxlength="12" pattern="^(?=.*[a-zA-Z0-9!@#$%^&*_=+-]).{6,12}$" required>
-						<span class="form__input--error"></span>
-					</div>
-				</fieldset>
-				<button type="submit" class="button button--fill button--padding">Entra</span>
-			</form>
+		<section class="producto">
+			
+			<div class="produto__datos d--grid gap--3">
+				<div class="producto__datos--imagen">
+					<img src="./assets/img/Hero.png" alt="Añadir imagen">
+				</div>
+				<div class="producto__datos--info">
+					<div class="producto__info--titulo">AluraGeek</div>
+					<div class="producto__info--precio">$00.00</div>
+					<div class="producto__info--descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia iste accusamus tenetur quod accusantium consectetur, nisi assumenda laborum maxime cupiditate ex laboriosam cum harum. Sit cupiditate laboriosam odio. Sapiente, optio!</div>
+				</div>
+			</div>
+
 		</section>
 
+		<section class="similares">
+			<h3 class="similares__titulo">Productos similares</h3>
+		</section>
+		
 		<footer>
 			<div class="container">
 				<div class="footer__grid d--grid gap--3">
@@ -77,10 +77,7 @@
 						<a href="#" class="footer__link">Anúncie aquí</a>
 					</div>
 					<div class="footer__grid--form">
-						<!-- 
-							# EMAIL FAKE: https://temp-mail.org/es/
-						-->
-						<form method="POST" action="https://formsubmit.co/kipek41852@dicopto.com" name="formulario">
+						<form method="POST" action="https://formsubmit.co/pazesuju@mailgolem.com" name="formulario">
 							<fieldset>
 								<legend class="form__legend">Hable con nosotros</legend>
 								<div class="form__input--group">
@@ -106,6 +103,6 @@
 	</main>
 
 	<script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
-	<script type="module" src="./assets/js/login.js" async defer></script>
+	<script type="module" src="./assets/js/producto.js" async defer></script>
 </body>
 </html>

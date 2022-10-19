@@ -1,13 +1,13 @@
 import { estructura } from './productos.js'
 import { formulario } from './formulario.js'
 
-(() => {
+(async () => {
 	/*fetch('https://fakestoreapi.com/products')
    .then(res=>res.json())
    .then(json=>console.log(json))*/
 
-	estructura.secciones()
-	estructura.productos()
+	await estructura.secciones()
+	await estructura.productos()
 
 	const buscar = document.querySelector(".header__search--button")
 	buscar.onclick = e => {

@@ -17,7 +17,7 @@
 }
 .login__box .form__legend {
 	text-align: center;
-	font-size: 2rem;
+	font-size: var(--font-size-32);
 	margin-bottom: 1rem;
 }
 .form__input--group {

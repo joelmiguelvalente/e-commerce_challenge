@@ -41,8 +41,7 @@ const mostrarMensajedeError = (tipoDeInput, input) => {
    let mensaje = ""
    tipoDeErrores.forEach( error => {
       if(input.validity[error]) {
-         console.log(mensajesDeError[tipoDeInput][error])
-         mensaje = mensajesDeError[tipoDeInput][error]
+        if(input.validity[error]) mensaje = mensajesDeError[tipoDeInput][error]
       }
    })
    return mensaje
