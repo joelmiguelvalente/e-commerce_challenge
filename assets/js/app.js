@@ -1,10 +1,9 @@
-import { estructura } from './productos.js'
+import { estructura } from './estructura.js'
 import { formulario } from './formulario.js'
+import { storage } from './localstorage.js'
+
 
 (async () => {
-	/*fetch('https://fakestoreapi.com/products')
-   .then(res=>res.json())
-   .then(json=>console.log(json))*/
 
 	await estructura.secciones()
 	await estructura.productos()
@@ -23,9 +22,14 @@ import { formulario } from './formulario.js'
 		input.onfocus = input => input.target.parentElement.classList.add('form--active')
 		input.onblur = input => formulario.validar(input.target)
 	})
-	form.querySelector(".button").onclick = e => {
-		inputs.forEach(input => {
-			input.target.value = ''
-		})
+	form.querySelector(".button").onclick = () => inputs.forEach(input => input.target.value = '')
+
+	if(storage.login() === 'true') {
+		const boton = document.querySelector(".button--login")
+		if(storage.admin() === 'true') {
+			boton.setAttribute('href', 'dashboard.html')
+			boton.innerHTML = 'Admin'
+		} else boton.style.display = 'none'
 	}
+
 })()

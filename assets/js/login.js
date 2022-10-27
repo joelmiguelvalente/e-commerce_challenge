@@ -1,4 +1,5 @@
 import { formulario } from './formulario.js'
+import { storage } from './localstorage.js'
 
 (() => {
 	// Formulario para buscar, sin funcionalidad
@@ -19,5 +20,24 @@ import { formulario } from './formulario.js'
 		}
 	})
 	// Trabajaremos solo con el formulario del login, no del footer
+	const admin = 0;
+	const users = data => fetch(`http://localhost:3000/users`).then(response => response.json())
+	const botonEnviar = document.querySelector(".login__box .button")
+	botonEnviar.onclick = async e => {
+		e.preventDefault()
+		const email = document.querySelector("input[type=email]").value
+		const password = document.querySelector("input[type=password]").value
+		const usuarios = await users()
+
+		usuarios.forEach( (usuario, rango) => {
+			if(usuario.email === email || usuario.password === password) {
+				localStorage.setItem('admin', (admin === rango))
+				localStorage.setItem('logueado', true)
+				location.href = "./"
+			}
+		})
+	}
+
+	if(storage.login() === 'true') location.href = "./"
 
 })()
