@@ -3,7 +3,7 @@ import { formulario } from './formulario.js'
 import { storage } from './localstorage.js'
 
 
-(async () => {
+(async () => 
 
 	await estructura.secciones()
 	await estructura.productos()
