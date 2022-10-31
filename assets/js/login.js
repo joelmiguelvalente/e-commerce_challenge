@@ -34,6 +34,8 @@ import { storage } from './localstorage.js'
 				localStorage.setItem('admin', (admin === rango))
 				localStorage.setItem('logueado', true)
 				location.href = "./"
+			} else if(usuario.email !== email && usuario.password !== password) {
+				
 			}
 		})
 	}

@@ -9,7 +9,7 @@
 Si descargas este repo y quieres probarlo de manera local debes tener:
  - [NodeJS](https://nodejs.org/en/)
 
-Luego ejecutar
+Luego ejecutar con **CMD**
 ```
 npm install -g json-server
 ```

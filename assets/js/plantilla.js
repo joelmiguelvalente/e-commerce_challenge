@@ -27,8 +27,8 @@ const newCard = (elemento, admin = false) => {
 	
 	// Si esta en "dashboard" verá estas opciones
 	const adm = admin ? `<div class="productos__card--admin p--absolute d--grid gap--2">
-		<span class="productos__admin--button">e</span>
-		<span class="productos__admin--button">b</span>
+		<span id="${elemento.id}" data-tipo="editar" class="productos__admin--button"><iconify-icon icon="bx:message-square-edit"></iconify-icon></span>
+		<span id="${elemento.id}" data-tipo="borrar" class="productos__admin--button"><iconify-icon icon="bx:trash"></iconify-icon></span>
 	</div>` : ''
 	
 	// Si esta en "dashboard" verá el id, en caso contrario el link

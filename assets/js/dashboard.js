@@ -3,8 +3,6 @@ import { estructura } from './estructura.js'
 import { formulario } from './formulario.js'
 import { storage } from './localstorage.js'
 
-import { routes } from './routes.js'
-
 (async () => {
 
 	const form = document.forms.formulario
@@ -33,14 +31,19 @@ import { routes } from './routes.js'
 
 	} else location.href = './error.html'
 
-	const acciones = {
-		type: "products", 
-		act: "/SW006"
-	}
-	//console.log(await routes.access_json(acciones))
 	const verificar = () => {
-		const columna = document.querySelector('.productos__grid--column')
-		console.log(columna)
+		const columnas = [...document.querySelectorAll('.productos__grid--column')]
+		columnas.forEach( columna => {
+			const botones = [...columna.querySelectorAll('.productos__admin--button')]
+			botones.forEach( boton => {
+				boton.onclick = e => {
+					const objetivo = e.target
+					const ID = objetivo.id
+					const tipo = objetivo.dataset.tipo
+					console.log(ID, tipo)
+				}
+			})
+		})
 	}
 	
 })()

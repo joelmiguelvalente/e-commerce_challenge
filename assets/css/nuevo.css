@@ -1,0 +1,17 @@
+.section__nuevo {
+	padding: 2rem;
+}
+.nuevo__box {
+	width: 100%;
+}
+.nuevo__box .form__input--group {
+	width: 100%;
+}
+.nuevo__box .button {
+	width: 100%;
+}
+@media (min-width: 992px) {
+	.nuevo__box {
+		width: 500px;
+	}
+}

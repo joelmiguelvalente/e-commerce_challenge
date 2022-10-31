@@ -35,11 +35,13 @@
 	grid-template-columns: repeat(2, 1fr);
 }
 .productos__admin--button {
-	width: var(--font-size-20);
-	height: var(--font-size-20);
-	line-height: var(--font-size-20);
+	padding: 2px;
+	font-size: var(--font-size-20);
 	text-align: center;
 	color: var(--fondo-blanco);
-	background-color: #0006;
+	background-color: #0009;
 	cursor: pointer;
+}
+.productos__admin--button iconify-icon {
+	pointer-events: none
 }

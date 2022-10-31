@@ -11,6 +11,7 @@
  	--azul2-100: #1262CD;
  	--azul3-100: #18529F;
 
+ 	--font-size-10: 0.625rem; /* 10px */
  	--font-size-12: 0.75rem; /* 12px */
  	--font-size-14: 0.875rem; /* 14px */
  	--font-size-16: 1rem; /* 16px */
@@ -500,6 +501,10 @@ footer {
 	font-weight: 500;
 }
 .form__legend {
+	font-size: var(--font-size-22);
+	margin-bottom: 1rem;
+}
+.footer__grid--form .form__legend {
 	font-size: var(--font-size-16);
 	margin-bottom: 0.5rem;
 }
@@ -537,8 +542,9 @@ footer {
 .form__input--error {
 	position: absolute;
 	left: 0.8rem;
-	bottom: -6px;
-	font-size: var(--font-size-12);
+	bottom: -4px;
+	font-size: var(--font-size-10);
+	font-weight: 400;
 	font-style: italic;
 }
 .button--padding {
@@ -584,6 +590,14 @@ footer {
 	.footer__grid--links {
 		margin: 0;
 		align-items: flex-start;
+	}
+	.form__legend {
+		font-size: var(--font-size-32);
+		margin-bottom:1rem;
+	}
+	.footer__grid--form .form__legend {
+		font-size: var(--font-size-16);
+		margin-bottom: 0.5rem;
 	}
 }
 @media (min-width: 1200px) {

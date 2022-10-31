@@ -13,10 +13,16 @@ const validar = input => {
 const tipoDeErrores = [
    "valueMissing",
    "typeMismatch",
-   "patternMismatch"
+   "patternMismatch",
+   "customError"
 ]
 
 const mensajesDeError = {
+   url: {
+      valueMissing: 'El campo URL no puede estar vacio.',
+      patternMismatch: 'La URL no es correcta!'
+   },
+   //
    email: {
       valueMissing: 'El campo Correo no puede estar vacio.',
       typeMismatch: 'El correo no es valido.'
