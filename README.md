@@ -6,15 +6,8 @@
 
 ### ¡Bienvenido al proyecto BETA del E-Commerce !
 
-Si descargas este repo y quieres probarlo de manera local debes tener:
- - [NodeJS](https://nodejs.org/en/)
-
-Luego ejecutar con **CMD**
-```
-npm install -g json-server
-```
-
-Luego, una vez instalado el "**JSON-SERVER**" tienes que ejecutar _(obviamente, dentro del proyecto)_
-```
-json-server --watch db.json
-```
+Versión completamente modificada:
+ - Modificación completa de la lógica "_javascript_"
+ - Generador automático de la base de datos en _localStorage_
+ - Mejor distribución de los archivos
+ - Separación de las páginas
