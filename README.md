@@ -1,6 +1,7 @@
 # Challenge ONE | Front End -  E-Commerce
 
 <a href="https://www.linkedin.com/in/joelmiguelvalente" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/48e22f39-c4d7-40c2-ac15-3a3e0c5473f1/deploy-status)](https://app.netlify.com/sites/musical-squirrel-78b47f/deploys)
 
 ![Vista previa](screenshot.png)
 
@@ -11,7 +12,7 @@ Versión completamente modificada:
  - Generador automático de la base de datos en _localStorage_
  - Mejor distribución de los archivos
  - Separación de las páginas
- - Sistema de busqueda (_Falta terminar de aplicar_)
+ - Sistema de busqueda **funciona solo en movil** (_Falta terminar de aplicar_)
 
 ***
 
