@@ -18,7 +18,7 @@
 	margin-bottom: var(--font-size-16);
 }
 .producto__datos--imagen img {
-	height: 192px;
+	height: 200px;
 	width: 100%;
 	object-fit: cover;
 }
@@ -50,8 +50,14 @@
 	.produto__datos {
 		grid-template-columns: auto 1fr;
 	}
-	.producto__info--titulo, .similares__titulo {
+	.similares__titulo {
 		font-size: var(--font-size-26);
+	}
+	.producto__info--titulo {
+		font-size: var(--font-size-52);
+	}
+	.producto__info--descripcion {
+		line-height: var(--font-size-20);
 	}
 	.producto__datos--imagen img {
 		height: 256px;

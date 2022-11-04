@@ -11,3 +11,15 @@ Versión completamente modificada:
  - Generador automático de la base de datos en _localStorage_
  - Mejor distribución de los archivos
  - Separación de las páginas
+ - Sistema de busqueda (_Falta terminar de aplicar_)
+
+***
+
+### Hay 5 usuarios demo
+| Usuario | Email | Contraseña |
+| :-----: | ----- | ---------: |
+| 	  1 	 | miguel92@alurageek.com | ejemplo |
+| 	  2 	 | atuny0@alurageek.com | 9uQFF1Lh |
+| 	  3 	 | hbingley1@alurageek.com | CQutx25i8r |
+| 	  4 	 | rshawe2@alurageek.com | OWsTbMUgFc |
+| 	  5 	 | yraigatt3@alurageek.com | sRQxjPfdS |

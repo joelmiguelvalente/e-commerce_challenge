@@ -46,6 +46,7 @@ categorias.forEach( (categoria, ind) => {
 			// ID automatico
 			"id": uuidv4().split('-')[0],
 			// Ruta de imagen
+			"thumbnail": `./assets/img/${categoria.seo}/producto_00${int}.png`,
 			"image": `./assets/img/${categoria.seo}/producto_00${int}.jpg`,
 			// Titulo
 			"title": `${categoria.nombre} 00${int}`,
@@ -70,15 +71,29 @@ export const productos = __lsExists(JSON.stringify(myArray), 'products')
 */
 export const usuarios = __lsExists(JSON.stringify([
 	{
-		"id": "1",
+		"email": "miguel92@alurageek.com",
+		"id": 1,
 		"name": "Miguel92",
-		"password": "ejemplo",
-		"email": "miguel92@alurageek.com"
-	},
-	{
-		"id": "2",
-		"name": "Demo",
-		"password": "ejemplo2",
-		"email": "demouser@alurageek.com"
+		"password": "ejemplo"
+	}, {
+   	"email": "atuny0@sohu.com",
+   	"id": 2,
+   	"name": "atuny0",
+   	"password": "9uQFF1Lh"
+	}, {
+	   "email": "hbingley1@plala.or.jp",
+	   "id": 3,
+	   "name": "hbingley1",
+	   "password": "CQutx25i8r"
+	}, {
+	   "email": "rshawe2@51.la",
+	   "id": 4,
+	   "name": "rshawe2",
+	   "password": "OWsTbMUgFc"
+	}, {
+	   "email": "yraigatt3@nature.com",
+	   "id": 5,
+	   "name": "yraigatt3",
+	   "password": "sRQxjPfdS"
 	}
 ]), 'users')
