@@ -23,11 +23,28 @@
 .form__input--group {
 	width: 100%;
 }
+.requireds span {
+	display: block;
+	color: rgba(200,0,0,.2);
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 12px;
+	font-style: italic;
+	padding: 3px;
+	text-align: center;
+}
+.requireds span.ok {
+	text-decoration: line-through;
+	color: #4AAC6F;
+}
 @media (min-width: 768px) {
 	.login__box {
 		width: 450px;
 	}
 	.login__box .form__legend {
 		margin-bottom: 2rem;
+	}
+	.requireds {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }

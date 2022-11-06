@@ -12,14 +12,18 @@ Versión completamente modificada:
  - Generador automático de la base de datos en _localStorage_
  - Mejor distribución de los archivos
  - Separación de las páginas
- - Sistema de busqueda **funciona solo en movil** (_Falta terminar de aplicar_)
+ - Sistema de busqueda en tiempo real (_Falta terminar de aplicar_)
+ - Sistema de administración (_Sin funcionalidad aun_)
+ - Sistema de login (_Faltaría más verificaciones_)
+ - Comprobación si ha iniciado sesión o no
+ - Indentificación de administrador o usuario normal
 
 ***
 
 ### Hay 5 usuarios demo
 | Usuario | Email | Contraseña |
 | :-----: | ----- | ---------: |
-| 	  1 	 | miguel92@alurageek.com | ejemplo |
+| 	  1 	 | miguel92@alurageek.com | ejemploUser22 |
 | 	  2 	 | atuny0@alurageek.com | 9uQFF1Lh |
 | 	  3 	 | hbingley1@alurageek.com | CQutx25i8r |
 | 	  4 	 | rshawe2@alurageek.com | OWsTbMUgFc |

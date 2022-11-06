@@ -292,12 +292,13 @@ header {
 	right: -8px!important;
 	z-index: 99;
 }
-.header__lista--item {
+.header__lista--item a {
 	font-weight: 600;
 	display: block;
-	padding: .5rem;
+	padding: .25rem;
+	margin: .3rem;
 }
-.header__lista--item:hover {
+.header__lista--item:hover a {
 	background-color: rgba(100,100,100,.2);
 	font-weight: 700;
 	cursor: pointer;
@@ -356,7 +357,6 @@ header {
 	}
 	.header__search--lista {
 		width: 365px;
-		*margin-right: 24px;
 	}
 }
 
@@ -584,7 +584,7 @@ footer {
 .form__input--error {
 	position: absolute;
 	left: 0.8rem;
-	bottom: -4px;
+	top: 2rem;
 	font-size: var(--font-size-10);
 	font-weight: 400;
 	font-style: italic;

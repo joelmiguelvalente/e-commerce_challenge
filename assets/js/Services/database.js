@@ -74,24 +74,24 @@ export const usuarios = __lsExists(JSON.stringify([
 		"email": "miguel92@alurageek.com",
 		"id": 1,
 		"name": "Miguel92",
-		"password": "ejemplo"
+		"password": "ejemploUser22"
 	}, {
-   	"email": "atuny0@sohu.com",
+   	"email": "atuny0@alurageek.com",
    	"id": 2,
    	"name": "atuny0",
    	"password": "9uQFF1Lh"
 	}, {
-	   "email": "hbingley1@plala.or.jp",
+	   "email": "hbingley1@alurageek.com",
 	   "id": 3,
 	   "name": "hbingley1",
 	   "password": "CQutx25i8r"
 	}, {
-	   "email": "rshawe2@51.la",
+	   "email": "rshawe2@alurageek.com",
 	   "id": 4,
 	   "name": "rshawe2",
 	   "password": "OWsTbMUgFc"
 	}, {
-	   "email": "yraigatt3@nature.com",
+	   "email": "yraigatt3@alurageek.com",
 	   "id": 5,
 	   "name": "yraigatt3",
 	   "password": "sRQxjPfdS"

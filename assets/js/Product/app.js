@@ -41,10 +41,14 @@ import { buscar } from '../Services/search.js'
 			let suma = lp + total + 1
 			templates.item(similares, productos[suma], false)
 		}
-	}		
-	
+	}
 
-	console.log(estado.administrador())
-	console.log(estado.logueado())
+	if(estado.logueado()) {
+		const boton = document.querySelector(".button--login")
+		if(estado.administrador()) {
+			boton.setAttribute('href', 'dashboard.html')
+			boton.innerHTML = 'Admin'
+		} else boton.style.display = 'none'
+	}
 
 })()

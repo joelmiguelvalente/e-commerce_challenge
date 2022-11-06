@@ -38,31 +38,36 @@ const resetear = form => {
 	formulario__input.value = ''
 }
 
-formulario__boton.onclick = e => {
-	e.preventDefault()
+// Funcion para capturar tecla
+const escribiendo = input => {
 	// Reseteamos los valores por defecto
 	resetear(formulario)
-	// En caso que la pantalla sea menor a 426
-	if(window.screen.width < 427) formulario.classList.toggle("search--open")
-	// Cada vez que el usuario tipea
-	formulario__input.onkeyup = even => {
+	input.onkeyup = even => {
 		// Obtenemos la lista
-		const mylist =document.querySelector(".header__search--lista")
+		const mylist = document.querySelector(".header__search--lista")
 		// Obtenemos la palabra escrita en el input
-		const palabra = formulario__input.value
+		const palabra = input.value
 		// Limpiamos la lista
 		mylist.innerHTML = ''
 		// Recorremos todos los productos existentes
 		productos.map( producto => {
-			// Solo si incluye la palabra
-			if(!producto.title.indexOf(palabra)) {
-				// Añadimos las palabras similares a la lista
-				mylist.appendChild(items(producto.id, producto.title))
-			}
+			// Solo si incluye la palabra y Añadimos las palabras similares a la lista
+			if(!producto.title.indexOf(palabra)) mylist.appendChild(items(producto.id, producto.title))
 		})
 		if(mylist.clientHeight > 250) mylist.style.overflowY = 'auto'
 		mylist.style.height = (mylist.clientHeight > 250) ? '250px' : ''
 	}
 }
+
+formulario__boton.onclick = e => {
+	e.preventDefault()
+	// En caso que la pantalla sea menor a 426
+	if(window.screen.width < 767) formulario.classList.toggle("search--open")
+	// Cada vez que el usuario tipea
+	escribiendo(formulario__input)
+}
+if(window.screen.width > 767) escribiendo(formulario__input)
+
+// Proximamente cerrar lista al precionar en cualquier parte, excepto lista
 
 export const buscar = {}
