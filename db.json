@@ -157,12 +157,26 @@
 			"name": "Miguel92",
 			"password": "ejemplo",
 			"email": "miguel92@alurageek.com"
-		},
-		{
+		}, {
 			"id": "2",
-			"name": "Demo",
-			"password": "ejemplo2",
-			"email": "demouser@alurageek.com"
+			"name": "atuny0",
+			"email": "atuny0@alurageek.com",
+			"password": "9uQFF1Lh"
+		},	{
+			"id": "3",
+			"name": "hbingley1",
+			"email": "hbingley1@alurageek.com",
+			"password": "CQutx25i8r"
+		},	{
+			"id": "4",
+			"name": "rshawe2",
+			"email": "rshawe2@alurageek.com",
+			"password": "OWsTbMUgFc"
+		},	{
+			"id": "5",
+			"name": "yraigatt3",
+			"email": "yraigatt3@alurageek.com",
+			"password": "sRQxjPfdS"
 		}
 	]
 }
