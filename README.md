@@ -9,12 +9,13 @@
 
 Versión completamente modificada:
  - Modificación completa de la lógica "_javascript_"
- - Generador automático de la base de datos en _localStorage_
+ - Generador automático de la base de datos en _localStorage_ y _sessionStorage_
  - Mejor distribución de los archivos
  - Separación de las páginas
- - Sistema de busqueda en tiempo real (_Falta terminar de aplicar_)
- - Sistema de administración (_Sin funcionalidad aun_)
- - Sistema de login (_Faltaría más verificaciones_)
+ - Página de categorias individuales
+ - Sistema de busqueda en tiempo real (_sin página_)
+ - Sistema de administración (_Editar/Borrar sin funcionalidad aun_)
+ - Sistema de login (_Faltaría más validaciones_)
  - Comprobación si ha iniciado sesión o no
  - Indentificación de administrador o usuario normal
 

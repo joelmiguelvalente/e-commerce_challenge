@@ -8,7 +8,7 @@ const sections = (element, obj) => {
 		const bloque = `<div class="container">
 			<div class="productos__header d--flex jc--between ai--center">
 				<div class="productos__header--title fw--700">${categoria.nombre}</div>
-				<a href="${categoria.seo}.html" class="productos__header--link fw--700 d--flex jc--end ai--center">Ver todo <iconify-icon icon="fluent:arrow-right-20-filled"></iconify-icon></a>
+				<a href="categorias.html?seo=${categoria.seo}" class="productos__header--link fw--700 d--flex jc--end ai--center">Ver todo <iconify-icon icon="fluent:arrow-right-20-filled"></iconify-icon></a>
 			</div>
 			<div class="productos__grid d--grid gap--3">
 			</div>

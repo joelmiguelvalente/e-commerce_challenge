@@ -1,12 +1,12 @@
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 const __lsExists = (newlist, name) => {
-	// Comprobamos que no este en localStorage
-	const listExist = (localStorage.getItem(name) === null)
+	// Comprobamos que no este en sessionStorage
+	const listExist = (sessionStorage.getItem(name) === null)
 	// Verificamos
-	if(listExist) localStorage.setItem(name, newlist)
+	if(listExist) sessionStorage.setItem(name, newlist)
 	// Mostramos la lista como un array
-	return listExist ? JSON.parse(newlist) : JSON.parse(localStorage.getItem(name))
+	return listExist ? JSON.parse(newlist) : JSON.parse(sessionStorage.getItem(name))
 }
 
 /**
